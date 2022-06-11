@@ -1,0 +1,309 @@
+
+body{
+    padding: 0;
+    margin: auto;
+    background-color: #9AD9B0;
+    font-family: 'Alegreya Sans', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 170px;
+}
+
+/* ESTILOS GENERALES */
+.contenedor{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.boton{
+    height: 30px;
+    background-color: #8E22DB;
+    color: azure;
+    border: 0;
+    padding: 0 20px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+aside#cuadrito{
+    float: right;
+    width: 30%;
+    margin-top: 90px;
+}
+.destacado{
+    background-color: #351f5b;
+    padding: 15px;
+    color: azure;
+}
+.titulo-pagina{
+    font-size: 30px;
+    padding-bottom: 0;
+    color: #351f5b;
+}
+
+
+/* header */
+header{
+    background-color: #0E8F3B;
+    color: azure;
+    border-bottom: #8E22DB 3px solid;
+    padding-top: 30px;
+    min-height: 70px;
+}
+header a{
+    color: azure;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 400;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+header .logo{
+    float: left;
+}
+header .logo h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+header a:hover{
+    color: #DB9527;
+    font-weight: 400;
+}
+header .resaltado, .actual, a{
+    color: #351f5b;
+}
+
+/* vidriera */
+#vidriera{
+    min-height: 400px;
+    background-image: url(img/vidriera_dark.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: azure;
+}
+#vidriera h1{
+    margin-top: 90px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#vidriera p{
+    font-size: 20px;
+}
+
+/* newsletter */
+#newsletter{
+    background-color: #0E8F3B;
+    color: azure;
+}
+#newsletter h3{
+    float: left;
+}
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 20px;
+    width: 200px;
+}
+
+/* Boxes */
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding-left: 10px;
+}
+#boxes .box img{
+    width: 220px;
+}
+#boxes .box h2{
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #351f5b;
+}
+#boxes .box p{
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+/* footer */
+footer{
+    padding: 20px 0px;
+    background-color: #8E22DB;
+    margin: 0;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.redes-sociales{
+    text-align: center;
+    display:inline-flex;
+}
+.redes-sociales img{
+    width:.5vh;
+    max-width: 50px;
+    min-width: 40px;
+    height: auto;
+}
+.redes-sociales div{
+    margin: 0 25px;
+}
+footer p{
+    font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px){
+    header .logo,
+    header nav,
+    header nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    header .logo h1{
+        font-size: 37px;
+    }
+    header a{
+        font-size: 18px;
+    }
+    #vidriera h1{
+        margin-top: 40px;
+    }
+    ul{
+        margin-top: 20px;
+    }
+    #newsletter h3,
+    #newsletter form{
+        float: none;
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 7px;
+    }
+    #newsletter input[type="email"]{
+        width: 100%;
+    }
+    .boton{
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+    #boxes .box,
+    #boxes h2{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #boxes .box p{
+        font-size: 22px;
+    }
+    #boxes .box h2{
+        font-size: 30px;
+    }
+    #boxes .box img{
+        width: 220px;
+        margin-top: 25px;
+    }
+    
+}
+
+/* SOMOS */
+#img_somos{
+    max-height: 200px;
+    background-image: url(img/header1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: azure;
+    margin-top: 0px;
+}
+#img_somos h1{
+    margin: 0;
+    font-size: 80px;
+    padding-top: 10px;
+    font-weight: 100;
+}
+article#somos-columna{
+    float: left;
+    max-width: 65%;
+}
+
+/* IDEAS */
+#img_idea{
+    max-height: 200px;
+    background-image: url(img/ideas2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: azure;
+    margin-top: 0px;
+}
+#img_idea h1{
+    margin: 0;
+    font-size: 80px;
+    padding-top: 10px;
+    font-weight: 100;
+}
+ul#idea li{
+    color: aliceblue;
+    list-style: none;
+    background-color: #351f5b;
+    border: #0E8F3B solid 2px;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+article#idea-columna{
+    float: left;
+    max-width: 65%;
+}
+aside#cuadrito-ideas {
+    float: right;
+    width: 30%;
+    margin-top: 95px;
+    
+}
+aside#cuadrito-ideas img{
+    max-width: 100%;
+    
+    
+}
+
+/* CONTACTO */
+article#contacto-columna{
+    float: left;
+    max-width: 65%;
+}
+aside#cuadrito .destacado input,
+aside#cuadrito .destacado textarea{
+    width: 90%; margin-bottom: 7px;
+}
+::placeholder{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #351f5b7b;
+}
