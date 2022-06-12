@@ -1,202 +1,240 @@
-
-body{
+body {
     padding: 0;
     margin: auto;
-    background-color: #9AD9B0;
+    background-color: #a4a7e0;
     font-family: 'Alegreya Sans', sans-serif;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 170px;
+    padding-bottom: 400px;
 }
 
 /* ESTILOS GENERALES */
-.contenedor{
+.contenedor {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
-.boton{
+
+.boton {
     height: 30px;
-    background-color: #8E22DB;
-    color: azure;
+    background-color: #FAC800;
+    color: #000000;
     border: 0;
     padding: 0 20px;
 }
+
 ul {
     margin: 0;
     padding: 0;
 }
-aside#cuadrito{
+
+aside#cuadrito {
     float: right;
     width: 30%;
     margin-top: 90px;
 }
-.destacado{
-    background-color: #351f5b;
-    padding: 15px;
-    color: azure;
+
+.destacado {
+    background-color: #FFE47A;
+    padding: 5px;
+    color: #000000;
 }
-.titulo-pagina{
+
+.titulo-pagina {
     font-size: 30px;
     padding-bottom: 0;
-    color: #351f5b;
+    color: #060835;
 }
 
 
 /* header */
-header{
-    background-color: #0E8F3B;
-    color: azure;
-    border-bottom: #8E22DB 3px solid;
+header {
+    position: fixed;
+    background-color: #FAC800;
+    color: #000000;
+    border-bottom: #000000 3px solid;
     padding-top: 30px;
-    min-height: 70px;
+    height: 70px;
+    width: 100%;
 }
-header a{
-    color: azure;
+
+header a {
+    color: #000000;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 17px;
     font-weight: 400;
 }
-header li{
+
+header li {
     float: left;
     display: inline;
     padding: 0 20px;
 }
-header .logo{
+
+header .logo {
     float: left;
 }
-header .logo h1{
+
+header .logo h1 {
     margin: 0;
 }
-header nav{
+
+header nav {
     float: right;
     margin-top: 10px;
 }
-header a:hover{
-    color: #DB9527;
+
+header a:hover {
+    color: #1925FF;
     font-weight: 400;
 }
-header .resaltado, .actual, a{
-    color: #351f5b;
+
+header .resaltado,
+.actual,
+a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #1925FF;
 }
 
 /* vidriera */
-#vidriera{
-    min-height: 400px;
-    background-image: url(img/vidriera_dark.jpg);
+#vidriera {
+    padding-top:200px;
+    height: 400px;
+    background-image: url(/img/vidriera_dark.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: azure;
+    color: #ffffff;
 }
-#vidriera h1{
+
+#vidriera h1 {
     margin-top: 90px;
     font-size: 55px;
     margin-bottom: 10px;
 }
-#vidriera p{
+
+#vidriera p {
     font-size: 20px;
 }
 
 /* newsletter */
-#newsletter{
-    background-color: #0E8F3B;
-    color: azure;
+#newsletter {
+    background-color: #6970FF;
+    color: #FAC800;
 }
-#newsletter h3{
+
+#newsletter h3 {
     float: left;
 }
-#newsletter form{
+
+#newsletter form {
     float: right;
     margin-top: 15px;
 }
-#newsletter input[type="email"]{
+
+#newsletter input[type="email"] {
     padding: 4px;
     height: 20px;
     width: 200px;
 }
 
 /* Boxes */
-#boxes{
+#boxes {
     margin-top: 20px;
 }
-#boxes .box{
+
+#boxes .box {
     float: left;
     text-align: center;
     width: 30%;
     padding-left: 10px;
 }
-#boxes .box img{
+
+#boxes .box img {
     width: 220px;
 }
-#boxes .box h2{
+
+#boxes .box h2 {
     font-size: 18px;
     margin-bottom: 0;
     text-align: center;
-    color: #351f5b;
+    color: #060835;
 }
-#boxes .box p{
+
+#boxes .box p {
     font-size: 15px;
     padding: 0 20px;
 }
 
 /* footer */
-footer{
-    padding: 20px 0px;
-    background-color: #8E22DB;
+footer {
+    padding-top: 20px;
+    background-color: #FAC800;
     margin: 0;
     margin-top: 20px;
-    color: rgb(0, 0, 0);
+    color: #000000;
     text-align: center;
     font-size: 20px;
     position: absolute;
     bottom: 0;
     width: 100%;
+    border-top: #000000 3px solid;
 }
-.redes-sociales{
+
+.redes-sociales {
+    padding: 30px 0;
     text-align: center;
-    display:inline-flex;
+    display: inline-flex;
 }
-.redes-sociales img{
-    width:.5vh;
-    max-width: 50px;
-    min-width: 40px;
+
+.redes-sociales img {
+    width: 50px;
     height: auto;
 }
-.redes-sociales div{
+
+.redes-sociales div {
     margin: 0 25px;
 }
-footer p{
+
+footer p {
     font-size: 12px;
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 768px){
+@media (max-width: 768px) {
+
     header .logo,
     header nav,
-    header nav li{
+    header nav li {
         float: none;
         text-align: center;
         width: 100%;
     }
-    header{
+
+    header {
         padding-bottom: 20px;
     }
-    header .logo h1{
+
+    header .logo h1 {
         font-size: 37px;
     }
-    header a{
+
+    header a {
         font-size: 18px;
     }
-    #vidriera h1{
+
+    #vidriera h1 {
         margin-top: 40px;
     }
-    ul{
+
+    ul {
         margin-top: 20px;
     }
+
     #newsletter h3,
-    #newsletter form{
+    #newsletter form {
         float: none;
         text-align: center;
         width: 100%;
@@ -204,106 +242,146 @@ footer p{
         font-weight: 400;
         margin: 7px;
     }
-    #newsletter input[type="email"]{
+
+    #newsletter input[type="email"] {
         width: 100%;
     }
-    .boton{
+
+    .boton {
         width: 100%;
         display: block;
         margin-bottom: 15px;
     }
+
     #boxes .box,
-    #boxes h2{
+    #boxes h2 {
         float: none;
         text-align: center;
         width: 100%;
     }
-    #boxes .box p{
+
+    #boxes .box p {
         font-size: 22px;
     }
-    #boxes .box h2{
+
+    #boxes .box h2 {
         font-size: 30px;
     }
-    #boxes .box img{
+
+    #boxes .box img {
         width: 220px;
         margin-top: 25px;
     }
-    
+
 }
 
 /* SOMOS */
-#img_somos{
-    max-height: 200px;
-    background-image: url(img/header1.jpg);
+#img_somos {
+    padding-top:200px;
+    height: 400px;
+    background-image: url(/img/header1.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: azure;
+    color: #ffffff;
     margin-top: 0px;
 }
-#img_somos h1{
+
+#img_somos h1 {
     margin: 0;
     font-size: 80px;
     padding-top: 10px;
     font-weight: 100;
 }
-article#somos-columna{
+
+article#somos-columna {
     float: left;
     max-width: 65%;
 }
 
+#cuadrito p{
+    font-size: 30px;
+}
+.comillas{
+    font-size: 50px;
+    font-weight: 600;
+}
+
 /* IDEAS */
-#img_idea{
-    max-height: 200px;
-    background-image: url(img/ideas2.jpg);
+#img_idea {
+    padding-top:200px;
+    height: 400px;
+    background-image: url(/img/ideas2.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: azure;
+    color: #ffffff;
     margin-top: 0px;
 }
-#img_idea h1{
+
+#img_idea h1 {
     margin: 0;
     font-size: 80px;
     padding-top: 10px;
     font-weight: 100;
 }
-ul#idea li{
-    color: aliceblue;
+
+ul#idea li {
+    color: #ffffff;
     list-style: none;
-    background-color: #351f5b;
-    border: #0E8F3B solid 2px;
+    background-color: #060835;
+    border: #FAC800 solid 2px;
     padding: 20px;
     margin-bottom: 5px;
 }
-article#idea-columna{
+
+article#idea-columna {
     float: left;
     max-width: 65%;
 }
+
 aside#cuadrito-ideas {
     float: right;
     width: 30%;
     margin-top: 95px;
-    
+
 }
-aside#cuadrito-ideas img{
+
+aside#cuadrito-ideas img {
     max-width: 100%;
-    
-    
+
+
 }
 
 /* CONTACTO */
-article#contacto-columna{
+article#contacto-columna {
     float: left;
     max-width: 65%;
 }
+
 aside#cuadrito .destacado input,
-aside#cuadrito .destacado textarea{
-    width: 90%; margin-bottom: 7px;
+aside#cuadrito .destacado textarea {
+    width: 90%;
+    margin-bottom: 7px;
 }
-::placeholder{
+
+::placeholder {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 15px;
     font-weight: bold;
     color: #351f5b7b;
 }
+
+
+
+
+/*
+Paleta de colores: complementarios tonos azules y amarillos.
+Azul oscuro: #060835
+Azul brillante: #1925FF
+Azul medio: #4951EB
+Azul palido: #a4a7e0
+azul desaturado: #6970FF
+amarillo brillante: #FAC800
+amarillo palido: #FFE47A
+*/

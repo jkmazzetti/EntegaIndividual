@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <h1> <span class="resaltado">Diseño</span> y Desarrollo Web</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="somos.html">Somos</a></li>
+                    <li><a href="idea.html">Idea</a></li>
+                    <li class="actual">Contacto</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="img_somos">
+        <h1>Diseño Web</h1>
+    </section>
+    <section id="contacto">
+        <div class="contenedor">
+            <article id="contacto-columna">
+                <h1 class="titulo-pagina">Nuestra ubicacion</h1>
+                <p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4774019683273!2d-58.38400354877431!3d-34.617374165632775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaba6ac89b35%3A0x1a2dc24cbca665a7!2sUADE!5e0!3m2!1ses!2sar!4v1654107846144!5m2!1ses!2sar"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
+
+                <p class="destacado">La carrera que se presenta ti ene como propósito dar respuesta a las necesidades de
+                    un mercado en expansión en nuestro país, formando profesionales que son altamente demandados por las
+                    empresas en la actualidad.</p>
+            </article>
+            <aside id="cuadrito">
+                <div class="destacado">
+                    <h2>Contactanos</h2>
+                    <form action="envio.php" class="contacto">
+                        <div>
+                            <label for="Nombre">Nombre y Apellido</label>
+                            <input type="text" id="Nombre" placeholder="Tu nombre y apellidos">
+                        </div>
+                        <div>
+                            <label for="correo">e-mail</label><br>
+                            <input type="email" id="correo" placeholder="Tu e-mail@example.com">
+                        </div>
+                        <div>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="msn" id="mensaje" cols="30" rows="10"
+                                placeholder="Dejanos tu mensaje aquí."></textarea>
+                        </div>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <div class="redes-sociales">
+            <div class="icono"><img src="img/iconos/git.svg" alt="icono de git"></div>
+            <div class="icono"><img src="img/iconos/facebook.svg" alt="icono de facebook"></div>
+            <div class="icono"><img src="img/iconos/linkedin.svg" alt="icono de linkedin"></div>
+            <div class="icono"><img src="img/iconos/instagram.svg" alt="icono de instagram"></div>
+        </div>
+        <p>Diseño y Desarrollo Web<br>Copyright &copy; 2022</p>
+    </footer>
+</body>
+
+</html>
