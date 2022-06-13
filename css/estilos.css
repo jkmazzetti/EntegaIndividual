@@ -467,6 +467,10 @@ aside#cuadrito .destacado textarea {
     }
 
     /*IDEAS*/
+    #img_idea h1{
+        padding-top: 120px;
+        font-size: 40px;
+    }
     ul#idea {
         flex-direction: column;
         width: 90%;
