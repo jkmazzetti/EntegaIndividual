@@ -83,7 +83,7 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 header li {
@@ -107,14 +107,14 @@ header nav {
 
 header a:hover {
     color: #1925FF;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 header .resaltado,
 .actual,
 a {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 800;
     color: #1925FF;
 }
 
@@ -209,6 +209,8 @@ footer {
     display: inline-flex;
 }
 
+
+
 .redes-sociales img {
     width: 50px;
     height: auto;
@@ -227,12 +229,15 @@ footer p {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #000000;
-    background-size: 30px;
+    background-color: #FAC800;
+    background-image: url(../img/iconos/go.svg);
+    background-position: center;
+    background-size: 70px;
+    
 }
 
 .icono img {
-    transition: .5s;
+    transition: .15s;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -246,7 +251,7 @@ footer p {
     background-color: #1925FF;
     width: 50px;
     height: 50px;
-    transform: rotate(-360deg) translateY(-80px) translateX(55px);
+    transform: rotate(-1440deg) translateY(-80px) translateX(60px);
     box-shadow: 0px 0px 10px 10px #1925FF;
 }
 
@@ -285,7 +290,14 @@ article#somos-columna {
 }
 
 /* IDEAS */
-
+#idea a{
+    text-decoration: none;
+    text-transform: lowercase;
+}
+#idea .pie{
+    transform:translateY(-45px);
+    text-align: center;
+}
 .titulo-banner {
     color: #1925FF;
 }
@@ -467,6 +479,10 @@ aside#cuadrito .destacado textarea {
     }
 
     /*IDEAS*/
+    #idea .pie{
+        transform:translateY(5px);
+        text-align: center;
+    }
     #img_idea h1{
         padding-top: 120px;
         font-size: 40px;
