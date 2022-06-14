@@ -290,16 +290,22 @@ article#somos-columna {
 }
 
 /* IDEAS */
+#ideas{
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    width:90%;
+}
 .contenedor-idea{
     margin: auto;
-    padding:0;
-    width: 90%;
+    text-align: center;
+    width:100%;
 }
-#idea a{
+.idea a{
     text-decoration: none;
     text-transform: lowercase;
 }
-#idea .pie{
+.idea .pie{
     transform:translateY(-45px);
     text-align: center;
 }
@@ -312,9 +318,9 @@ article#somos-columna {
 }
 
 .video {
-    height: 600px;
-    margin-bottom: 100px;
+    margin: 100px 0;
     width:100%;
+    height:750px
 }
 .video img, .video iframe{
     width: 100%;
@@ -325,8 +331,12 @@ article#somos-columna {
 .titulo-pagina {
     text-align: center;
 }
+.idea img{
+    width: 50%;
+    height:auto;
+}
 
-#img_idea {
+.img_idea {
     height: 400px;
     background-image: url(../img/idea.png);
     background-size: cover;
@@ -336,33 +346,48 @@ article#somos-columna {
     margin-top: 0px;
 }
 
-#img_idea h1 {
+.img_idea h1 {
     margin: 0;
     font-size: 80px;
     padding-top: 200px;
 }
 
-ul#idea {
+.idea{
     display: flex;
-    width: 100%;
 }
-
-ul#idea li {
+.idea p{
+    text-align: left;
+}
+.idea li {
     text-align: center;
     margin: 20px;
-    width: 50%;
     color: #ffffff;
     list-style: none;
     background-color: #060835;
     border: #FAC800 solid 2px;
     padding: 0 20px;
 }
-
-
 #idea p {
     text-align: left;
 }
+.nota{
+    width: 25%;
+}
+.articulo{
+    padding: 0 50px;
+}
+.articulo h3, .texto-video, .nota p, .nota h3{
+    margin-top: 50px;
 
+}
+.texto-video p{
+    margin:50px;
+
+}
+.nota p{
+    margin:15px;
+
+}
 /* CONTACTO */
 article#contacto-columna {
     float: left;
@@ -476,39 +501,45 @@ aside#cuadrito .destacado textarea {
     }
 
     /*IDEAS*/
-    ul#idea {
+    
+    .idea{
         margin-top: 0px;
         padding: 0;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
         height: auto;
     }
-    ul#idea li{
+    .inv{
+        flex-direction: column;
+    }
+    .idea li{
         width: auto;
         margin: 20px;
     }
-    #idea .pie{
+    .pie{
         transform:translateY(5px);
         text-align: center;
     }
-    #img_idea h1{
+    .img_idea h1{
         padding-top: 225px;
         font-size: 40px;
     }
-    
-    .video {
-        margin-top: 50px;
+    .video{
         height: auto;
     }
+    .texto-video p, .nota p{
+        margin:10px;
     
-    
-    iframe {
-        width: 90%;
-        height: auto;
+    }
+    .idea iframe{
+        margin-top:150px;
+        width: 100%;
+        height: 300px;
     }
     
     .video img {
-        width: 90%;
+        margin-top: 60px;
+        width: 100%;
         height: auto;
     }
 }
