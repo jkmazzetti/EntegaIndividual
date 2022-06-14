@@ -290,6 +290,11 @@ article#somos-columna {
 }
 
 /* IDEAS */
+.contenedor-idea{
+    margin: auto;
+    padding:0;
+    width: 90%;
+}
 #idea a{
     text-decoration: none;
     text-transform: lowercase;
@@ -303,19 +308,25 @@ article#somos-columna {
 }
 
 .texto-video {
-    height: 300px;
+    height: 150px;
 }
 
 .video {
     height: 600px;
+    margin-bottom: 100px;
+    width:100%;
 }
-
+.video img, .video iframe{
+    width: 100%;
+}
+.video iframe{
+    height: 100%;
+}
 .titulo-pagina {
     text-align: center;
 }
 
 #img_idea {
-    padding-top: 200px;
     height: 400px;
     background-image: url(../img/idea.png);
     background-size: cover;
@@ -328,8 +339,7 @@ article#somos-columna {
 #img_idea h1 {
     margin: 0;
     font-size: 80px;
-    padding-top: 10px;
-    font-weight: 100;
+    padding-top: 200px;
 }
 
 ul#idea {
@@ -339,28 +349,15 @@ ul#idea {
 
 ul#idea li {
     text-align: center;
-    width: 100%;
+    margin: 20px;
+    width: 50%;
     color: #ffffff;
     list-style: none;
     background-color: #060835;
     border: #FAC800 solid 2px;
-    padding: 20px;
+    padding: 0 20px;
 }
 
-#webscraping,
-#simulador {
-    float: right;
-    width: 30%;
-    background-color: #FFE47A;
-}
-
-#webscraping {
-    margin-top: 95px;
-}
-
-#simulador {
-    margin-top: 670px;
-}
 
 #idea p {
     text-align: left;
@@ -479,19 +476,26 @@ aside#cuadrito .destacado textarea {
     }
 
     /*IDEAS*/
+    ul#idea {
+        margin-top: 0px;
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    ul#idea li{
+        width: auto;
+        margin: 20px;
+    }
     #idea .pie{
         transform:translateY(5px);
         text-align: center;
     }
     #img_idea h1{
-        padding-top: 120px;
+        padding-top: 225px;
         font-size: 40px;
     }
-    ul#idea {
-        flex-direction: column;
-        width: 90%;
-        height: auto;
-    }
+    
     .video {
         margin-top: 50px;
         height: auto;
