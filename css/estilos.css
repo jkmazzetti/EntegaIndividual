@@ -69,6 +69,7 @@ aside#cuadrito {
 
 /* header */
 header {
+    z-index: 1;
     position: fixed;
     background-color: #FAC800;
     color: #000000;
@@ -116,9 +117,6 @@ a {
     text-transform: uppercase;
     font-weight: 800;
     color: #1925FF;
-}
-.navbar{
-    transform: translateZ(50px);
 }
 
 /* vidriera */
@@ -545,6 +543,7 @@ aside#cuadrito .destacado textarea {
         width: 100%;
         height: auto;
     }
+    
 }
 
 
