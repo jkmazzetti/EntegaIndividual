@@ -429,6 +429,10 @@ aside#cuadrito .destacado textarea {
         font-size: 20px;
     }
 
+    header li {
+        padding: 0 12px;
+    }
+
     header a {
         font-size: 12px;
     }
